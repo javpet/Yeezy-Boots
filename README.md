@@ -7,7 +7,7 @@ The image carousel based on Flickr's API, meanwhile the scene has been created w
 More information Chrome's support
 https://webvr.info/get-chrome/
 
-A-frame JS library
+A-frame JS library (Three.JS)
 https://aframe.io/
 
 Designing forVR
