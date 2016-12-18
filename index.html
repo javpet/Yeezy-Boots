@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A-Frame Flickr Carousel</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="components/aframe-layout-component.min.js"></script>
+    <script src="components/aframe-look-at-component.min.js"></script>
+    <script src="components/flickr-search.js"></script>
+    <script src="components/rotate-on-click.js"></script>
+    <script src="entities/flickr-carousel.js"></script>
+  </head>
+  <body>
+    <a-scene id="scene">
+      <audio controls autoplay>
+          <source src="audio/KanyeWest.mp3" type="audio/mpeg">
+      </audio>
+      <a-flickr-carousel search="Yeezy Boots"
+                         api-key="b7b460c2952f9c10a285687a6e4033d8"
+                         radius="3"
+                         position="0 0.75 0"
+                         rotation="0 18 0"></a-flickr-carousel>
+      <a-entity id="cameraContainer" camera look-controls position="0 1.6 0">
+        <a-entity cursor="fuse: false"></a-entity>
+      </a-entity>
+      <a-camera>
+        <a-cursor color="#FFF"></a-cursor>
+      </a-camera>
+      <a-sky src="http://i.imgur.com/0NEx6gb.jpg" position="0 -1 0" rotation="0 45 0"></a-sky>
+    </a-scene>
+  </body>
+</html>
